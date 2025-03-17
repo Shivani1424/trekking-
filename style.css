@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D') no-repeat center center/cover;
+  z-index: -1;
+}
+
+#box1{
+    background:  
+    linear-gradient(
+      rgba(145, 138, 138, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('k.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+  
+}
+
+#box2{
+    background:linear-gradient(
+        rgba(145, 138, 138, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('dayara.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+
+#box3{
+    background:linear-gradient(
+        rgba(145, 138, 138, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('h.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+/* Scrolling Wrapper */
+.scroll-container {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding-right: 80px;
+}
+
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Box Styling */
+.box {
+  width: 100%;
+  height: 450px;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 5px solid #272728;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.box:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+}
+
+/* Responsive Typography */
+.box h1 {
+  text-align: center;
+  color: #e0c828;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.box p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scroll-wrapper {
+    width: 95%;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box h1 {
+    font-size: 1.5rem;
+  }
+
+  .box p {
+    font-size: 0.9rem;
+  }
+
+ 
+
+@media (max-width: 480px) {
+  
+    .box h1 {
+    font-size: 1.2rem;
+  }
+
+  .box p {
+    font-size: 0.8rem;
+  }
+}
+
+
